@@ -1,0 +1,11 @@
+service_name,cost_per_unit,measure_unit,resource_type,currency
+EMR,0.10,hour,compute,USD
+S3,0.02,gigabyte,storage,USD
+RDS,0.15,hour,compute,USD
+Lambda,0.20,request,compute,USD
+DynamoDB,0.25,gigabyte,storage,USD
+EC2,0.50,hour,compute,USD
+CloudFront,0.08,gigabyte,network,USD
+Redshift,0.30,hour,compute,USD
+Route53,0.05,query,network,USD
+CloudWatch,0.01,metric,monitoring,USD
