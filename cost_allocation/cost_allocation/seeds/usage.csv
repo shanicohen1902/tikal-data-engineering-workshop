@@ -1,4 +1,4 @@
-client,service_name,service_id,date,credit_used,resource_type
+client,service_name,service_id,date,total_used,resource_type
 Amazon,EMR,'est-2024-14-09-dev21-ror','2024-09-14',13000,compute
 Microsoft,S3,'est-2024-14-09-dev21-s3','2024-09-14',25000,storage
 Google,RDS,'est-2024-14-09-dev21-rds','2024-09-14',18000,compute
@@ -9,7 +9,6 @@ Salesforce,CloudFront,'est-2024-14-09-dev21-cloudfront','2024-09-14',15000,netwo
 SAP,Redshift,'est-2024-14-09-dev21-redshift','2024-09-14',30000,compute
 Rackspace,Route53,'est-2024-14-09-dev21-route53','2024-09-14',7000,network
 Heroku,CloudWatch,'est-2024-14-09-dev21-cloudwatch','2024-09-14',12000,monitoring
-client,service_name,service_id,date,credit_used,resource_type
 Amazon,EMR,'est-2024-01-05-dev21-ror','2024-01-05',13000,compute
 Microsoft,S3,'est-2024-01-12-dev21-s3','2024-01-12',25000,storage
 Google,RDS,'est-2024-01-19-dev21-rds','2024-01-19',18000,compute
@@ -73,7 +72,6 @@ Northrop Grumman,CloudWatch,'est-2024-03-30-dev21-cloudwatch','2024-03-30',12000
 General Dynamics,EMR,'est-2024-03-15-dev21-ror','2024-03-15',13500,compute
 Raytheon,S3,'est-2024-02-28-dev21-s3','2024-02-28',24500,storage
 L3Harris,RDS,'est-2024-02-20-dev21-rds','2024-02-20',19500,compute
-client,service_name,service_id,date,credit_used,resource_type
 Amazon,EMR,'est-2024-01-01-dev21-ror','2024-01-01',13000,compute
 Microsoft,S3,'est-2024-01-02-dev21-s3','2024-01-02',25000,storage
 Google,RDS,'est-2024-01-03-dev21-rds','2024-01-03',18000,compute
