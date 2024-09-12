@@ -1,5 +1,30 @@
 # Data Engineering Course Exercises with dbt
 
+## Installation
+
+### python virtual environment
+```sh
+pip install virtualenv
+python -m venv env
+source env/bin/activate
+```
+
+### Install DBT core
+```sh
+python -m pip install dbt-core
+```
+
+### Install DuckDB
+```sh
+python -m pip install  dbt-duckdb
+```
+
+### setup
+```sh
+cd cost_allocation
+dbt debug
+```
+
 ## Exercise 1: dbt Seeds
 **Objective**: Understand how to use dbt seeds to load CSV data into the dbt project.
 
