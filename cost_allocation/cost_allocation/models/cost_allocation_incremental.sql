@@ -1,6 +1,6 @@
 {{ config(
     materialized='incremental',
-    unique_key='service_id'
+    unique_key=['service_id', 'date']
 ) }}
 
 WITH usage_data AS (
