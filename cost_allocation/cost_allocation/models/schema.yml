@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: cost_allocation
+    description: "An example"
+    columns:
+      - name: resource_type
+        description: "Type of resource used."
+        tests:
+          - accepted_values:
+              values: ['compute', 'storage', 'network', 'monitoring']
