@@ -29,11 +29,8 @@ dbt debug
 **Objective**: Understand how to use dbt seeds to load CSV data into the dbt project.
 
 ### Instructions:
-1. Create a new directory in your dbt project named `data`.
-2. Save the usage and service cost CSV data as `usage.csv` and `service_costs.csv` respectively in the `data` directory.
-3. Define the seed configuration in `dbt_project.yml` to specify the file paths and any necessary configurations.
-4. Run the command `dbt seed` to load the data into your dbt project.
-5. Verify the data is loaded correctly by querying the tables in your database.
+1. Run the command `dbt seed` to load the data into your dbt project.
+1. Verify the data is loaded correctly by querying the tables in your database.
 
 ### Hint:
 - Use the `dbt seed --help` command to understand the options available for seeding data.
@@ -44,9 +41,9 @@ dbt debug
 **Objective**: Generate documentation for your dbt models and seeds.
 
 ### Instructions:
-1. Create a new model in your dbt project that calculates total costs based on the usage and service cost data.
+1. Create a new model `cost_allocation` in your dbt project that calculates total costs based on the usage and service cost data 
 2. Use the `description` property in your model file to document the purpose of the model.
-3. Add descriptions for each column in the `usage` and `service_costs` tables using the `description` property in the schema file.
+3. Add descriptions for each column in the `usage` and `cost_allocation` tables using the `description` property in the schema file.
 4. Run `dbt docs generate` to create the documentation.
 5. Open the documentation in your browser using `dbt docs serve` and explore the generated documentation.
 
@@ -71,21 +68,7 @@ dbt debug
 
 ---
 
-## Exercise 4: Jinja and Macros
-**Objective**: Utilize Jinja templating and macros to enhance dbt models.
-
-### Instructions:
-1. Create a macro that calculates the total cost based on the usage and service cost data.
-2. Use this macro in your model to compute total costs dynamically.
-3. Implement a Jinja conditional statement to filter results based on a specified date range.
-4. Document your macro and provide examples of how to use it in your models.
-
-### Hint:
-- Refer to the [dbt documentation on Jinja](https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros) for examples of how to create and use macros effectively.
-
----
-
-## Exercise 5: Testing
+## Exercise 4: Testing
 **Objective**: Implement testing in your dbt models to ensure data quality.
 
 ### Instructions:
@@ -99,5 +82,20 @@ dbt debug
 
 ### Hint:
 - Use the `dbt test --help` command to explore different testing options available in dbt.
+
+---
+
+
+## Exercise 5: Jinja and Macros
+**Objective**: Utilize Jinja templating and macros to enhance dbt models.
+
+### Instructions:
+1. Create a macro that calculates the total cost based on the usage and service cost data.
+2. Use this macro in your model to compute total costs dynamically.
+3. Implement a Jinja conditional statement to filter results based on a specified date range.
+4. Document your macro and provide examples of how to use it in your models.
+
+### Hint:
+- Refer to the [dbt documentation on Jinja](https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros) for examples of how to create and use macros effectively.
 
 ---
