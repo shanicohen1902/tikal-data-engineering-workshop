@@ -9,11 +9,7 @@ SELECT
   c.date,
   c.total_used,
   c.resource_type,
-  s.cost_per_unit,
-  c.total_used * s.cost_per_unit AS total_cost
 FROM {{ ref('service_usage') }} c
-JOIN {{ ref('service_costs') }} s ON c.service_name = s.service_name
-
 )
 
 select *
