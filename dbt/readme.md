@@ -2,23 +2,6 @@
 
 ## Installation
 
-### python virtual environment
-```sh
-pip install virtualenv
-python -m venv env
-source env/bin/activate
-```
-
-### Install DBT core
-```sh
-python -m pip install dbt-core
-```
-
-### Install DuckDB
-```sh
-python -m pip install  dbt-duckdb
-```
-
 ### setup
 ```sh
 cd cost_allocation
@@ -31,6 +14,10 @@ dbt debug
 ### Instructions:
 1. Run the command `dbt seed` to load the data into your dbt project.
 1. Verify the data is loaded correctly by querying the tables in your database.
+
+Answer the following questions using DuckDB cli:
+Which tables created in the db?
+How many lines in each table?
 
 ### Hint:
 - Use the `dbt seed --help` command to understand the options available for seeding data.

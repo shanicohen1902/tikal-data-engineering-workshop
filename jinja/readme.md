@@ -5,4 +5,7 @@ pip install Jinja2
 ````
 
 # Exercise
-change 'message.j2' template to perform suitable message to students who did not pass the exam
+Create a Jinja template that displays a congratulatory message for students who pass the exam and a gentle, supportive message for those who do not pass.
+Use Jinja's if-else conditional statements to make the message dynamic based on the student's score.
+
+<b>don't change the python code!</b>
