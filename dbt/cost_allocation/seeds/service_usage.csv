@@ -10,7 +10,6 @@ SAP,Redshift,'est-2024-14-09-dev21-redshift','2024-09-14',30000,compute
 Rackspace,Route53,'est-2024-14-09-dev21-route53','2024-09-14',7000,network
 Heroku,CloudWatch,'est-2024-14-09-dev21-cloudwatch','2024-09-14',12000,monitoring
 Amazon,EMR,'est-2024-01-05-dev21-ror','2024-01-05',13000,compute
-Microsoft,S3,'est-2024-01-12-dev21-s3','2024-01-12',25000,storage
 Google,RDS,'est-2024-01-19-dev21-rds','2024-01-19',18000,compute
 Alibaba,Lambda,'est-2024-02-02-dev21-lambda','2024-02-02',5000,compute
 Oracle,DynamoDB,'est-2024-02-15-dev21-dynamodb','2024-02-15',8000,storage
