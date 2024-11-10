@@ -77,10 +77,9 @@ How many lines in each table?
 **Objective**: Utilize Jinja templating and macros to enhance dbt models.
 
 ### Instructions:
-1. Create a macro that calculates the total cost based on the usage and service cost data.
-2. Use this macro in your model to compute total costs dynamically.
-3. Implement a Jinja conditional statement to filter results based on a specified date range.
-4. Document your macro and provide examples of how to use it in your models.
+Create a macro that add ‘upper_case_name’ column with service name in upper case mode
+Use this macro in your model to compute total this string
+Document your macro and provide examples of how to use it in your models.
 
 ### Hint:
 - Refer to the [dbt documentation on Jinja](https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros) for examples of how to create and use macros effectively.
