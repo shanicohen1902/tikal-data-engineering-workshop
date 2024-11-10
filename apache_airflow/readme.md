@@ -12,7 +12,7 @@ docker-compose up
 
 ### Standalone
 ```sh
-AIRFLOW_HOME={folder}/dbt-workshop/apache_airflow
+export AIRFLOW_HOME={folder}/dbt-workshop/apache_airflow
 cd apache_airflow
 airflow standalone
 ```

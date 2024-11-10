@@ -1,6 +1,8 @@
-from airflow import DAG
+from airflow import DAG, Dataset
 from airflow.operators.bash import BashOperator
 from datetime import datetime
+
+example_dataset = Dataset("s3://dataset/example.csv")
 
 default_args = {
     'owner': 'airflow',
@@ -15,6 +17,7 @@ run_dbt = BashOperator(
     task_id='run_dbt',
     bash_command='cd /Users/shani.cohen/dev/dbt-workshop/cost_allocation/cost_allocation && dbt run',
     dag=dag,
+    outlets=[example_dataset]
 )
 
 dbt_test = BashOperator(
@@ -24,3 +27,17 @@ dbt_test = BashOperator(
 )
 
 run_dbt >> dbt_test
+
+
+###########
+
+
+dag = DAG('dbt_test_exercise', default_args=default_args, schedule=[example_dataset])
+
+dbt_test = BashOperator(
+    task_id='dbt_test',
+    bash_command='cd /Users/shani.cohen/dev/dbt-workshop/cost_allocation/cost_allocation && dbt run',
+    dag=dag,
+)
+
+dbt_test
