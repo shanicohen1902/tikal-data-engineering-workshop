@@ -1,0 +1,12 @@
+Hello {{ name }}!
+
+{% if score >= 60 %}
+I'm happy to inform you that you did well on today's {{ test_name }}.
+You scored {{ score }} out of {{ max_score }} points. Congratulations on your success!
+{% else %}
+I wanted to reach out regarding today's {{ test_name }}. You scored {{ score }} out of {{ max_score }} points. While this may not have been the result you were hoping for, please don't be discouraged. There are always opportunities to improve, and I'm here to support you in your progress.
+
+Keep going, and let me know if you'd like any help preparing for the next test!
+{% endif %}
+
+Anke
