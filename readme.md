@@ -22,7 +22,12 @@ source env/bin/activate
 python -m pip install dbt-core
 ```
 
-### Install DuckDB
+### Install DBT for DuckDB
 ```sh
 python -m pip install  dbt-duckdb
+```
+
+### Install DuckDB
+```sh
+brew install duckdb
 ```
