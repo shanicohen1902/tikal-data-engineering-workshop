@@ -1,15 +1,13 @@
 # Data Engineering Course Exercises with dbt and airflow
 
 ## part 1
-[Jinja Templates](jinja/readme.md)
+[dbt workshop - exercises](dbt/readme.md)
+[dbt workshop - slides](DBT.pdf)
 
 ## part 2
-[dbt workshop](dbt/readme.md)
-
-## part 3
 [airflow workshop](apache_airflow/readme.md)
 
-
+## Requirements
 ### python virtual environment
 ```sh
 pip install virtualenv

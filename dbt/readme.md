@@ -43,15 +43,11 @@ How many lines in each table?
 **Objective**: Learn about different materialization strategies in dbt.
 
 ### Instructions:
-1. Create a new model that aggregates total usage costs per client for a specified period.
-2. Experiment with different materialization strategies:
-   - **Table**: Create a table that stores the aggregated results.
-   - **View**: Create a view that computes the results on-the-fly.
-   - **Incremental**: Implement an incremental model that only processes new data based on a date filter.
-3. Compare the performance and storage implications of each strategy by running the models and analyzing the execution times.
-
-### Hint:
-- Use the `dbt run --models <model_name>` command to run specific models and observe their performance.
+1. Create a new model ‘cost_allocation_incremental. 
+1. join service_costs and service_usage tables by service_name aggregate the data monthly
+1. calculate total_cost -  total usage costs  (cost_per_unit * total_used)
+1. Make this model to be updated incrementally 
+1. Think - how would you test that kind of model?
 
 ---
 
