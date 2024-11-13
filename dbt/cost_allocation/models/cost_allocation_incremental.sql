@@ -25,18 +25,13 @@ service_costs AS (
 )
 
 SELECT
-    u.client,
-    u.service_name,
-    u.service_id,
-    u.date,
-    u.total_used,
-    u.resource_type,
-    s.cost_per_unit,
-    (u.total_used * s.cost_per_unit) AS total_cost,
-    s.currency,
+    u.client as client,
+    DATE_TRUNC('month',STRPTIME(u.date, '%Y-%m-%d')) AS month,
+    sum((u.total_used * s.cost_per_unit)) AS total_cost,
     {{ upper_case('u.service_name') }} AS upper_case_service_name
 FROM usage_data u
 JOIN service_costs s ON u.service_name = s.service_name
+GROUP BY client, month , upper_case_service_name
 
 {% if is_incremental() %}
 WHERE u.date > (SELECT MAX(date) FROM {{ this }})  -- Only select new records based on the date
