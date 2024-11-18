@@ -27,5 +27,27 @@ python -m pip install  dbt-duckdb
 
 ### Install DuckDB
 ```sh
-brew install duckdb
+brew install duckdb # or something else for linux
+```
+
+## Airflow installation - standalone or docker  
+### Airflow Standalone installation
+```sh
+export AIRFLOW_HOME={your_project_path}/dbt-workshop/apache_airflow
+```
+### Airflow Standalone execution
+```
+cd apache_airflow
+airflow standalone
+```
+
+### Airflow Install with docker-compose (advanced)
+```sh
+mkdir ./dags ./logs ./plugins
+echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
+```
+### Airflow docker-compose execution
+```        
+docker-compose up airflow-init #first-time
+docker-compose up
 ```
