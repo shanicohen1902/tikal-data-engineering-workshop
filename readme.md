@@ -33,6 +33,7 @@ brew install duckdb # or something else for linux
 ## Airflow installation - standalone or docker  
 ### Airflow Standalone installation
 ```sh
+pip install apache-airflow
 export AIRFLOW_HOME={your_project_path}/dbt-workshop/apache_airflow
 ```
 ### Airflow Standalone execution
